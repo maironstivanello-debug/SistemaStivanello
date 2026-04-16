@@ -49,6 +49,11 @@ public class JFrmMmsPrincipal extends javax.swing.JFrame {
         jMnuUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
         jMnuUsuario.setMnemonic('u');
         jMnuUsuario.setText("Usuario");
+        jMnuUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuUsuarioActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMnuUsuario);
 
         jMnuFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -123,6 +128,10 @@ public class JFrmMmsPrincipal extends javax.swing.JFrame {
     private void jMnuLicencasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuLicencasActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMnuLicencasActionPerformed
+
+    private void jMnuUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMnuUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
