@@ -18,7 +18,7 @@ public class JDlgMmsUsuarios extends javax.swing.JDialog {
     public JDlgMmsUsuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        setTitle("Sistema de Vendas de Camisas de Time - Usuário");
+        setTitle("Loja de Tênis do Mairon - Usuário");
         setLocationRelativeTo(null);
           jTxtAcessos.setEnabled(false);
         jTxtApelido.setEnabled(false);

@@ -17,7 +17,7 @@ public class JFrmMmsPrincipal extends javax.swing.JFrame {
      */
     public JFrmMmsPrincipal() {
         initComponents();
-        setTitle("Sistema de Vendas de Camisas de Time - Inicio");
+        setTitle("Loja de Tênis do Mairon - Inicio");
         setExtendedState(MAXIMIZED_BOTH);
     }
 
