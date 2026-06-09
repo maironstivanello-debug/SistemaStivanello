@@ -6,7 +6,11 @@ package sistemastivanello;
 
 /**
  *
+<<<<<<< HEAD
  * @author lxn
+=======
+ * @author u09278438111
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
  */
 public class SistemaStivanello {
 

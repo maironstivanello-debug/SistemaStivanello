@@ -4,6 +4,7 @@
  */
 package view;
 
+<<<<<<< HEAD
 import static java.awt.Frame.MAXIMIZED_BOTH;
 
 /**
@@ -13,6 +14,13 @@ import static java.awt.Frame.MAXIMIZED_BOTH;
 public class JDlgMmsUsuarios extends javax.swing.JDialog {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgMmsUsuarios.class.getName());
+=======
+/**
+ *
+ * @author u09278438111
+ */
+public class JDlgMmsUsuarios extends javax.swing.JDialog {
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
 
     /**
      * Creates new form JDlgMmsUsuarios
@@ -20,6 +28,7 @@ public class JDlgMmsUsuarios extends javax.swing.JDialog {
     public JDlgMmsUsuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+<<<<<<< HEAD
           setTitle("Tela de Usuários");
         setLocationRelativeTo(null);
         jTxtMmsId.setEnabled(false);
@@ -37,6 +46,46 @@ public class JDlgMmsUsuarios extends javax.swing.JDialog {
         jBtnMmsPesquisar.setEnabled(true);
     }
    
+=======
+        setTitle("Cadstro de Usuários");
+        setLocationRelativeTo(null);
+        
+        jTxtMmsNome.setEnabled(false);
+        jTxtMmsApelido.setEnabled(false);
+        jFmtMmsDataNasc.setEnabled(false);
+        jCboMmsNivel.setEnabled(false);
+        jBtnMmsCancelar.setEnabled(false);
+        jBtnMmsConfirmar.setEnabled(false);
+    }
+    
+    public void habilitar(){
+        
+        
+        jTxtMmsNome.setEnabled(true);
+        jTxtMmsApelido.setEnabled(true);
+        jFmtMmsDataNasc.setEnabled(true);
+        jCboMmsNivel.setEnabled(true);
+        jBtnMmsCancelar.setEnabled(false);
+        jBtnMmsConfirmar.setEnabled(false);
+        jBtnMmsIncluir.setEnabled(true);
+        jBtnMmsAlterar.setEnabled(true);
+        jBtnMmsExcluir.setEnabled(true);
+        jBtnMmsPesquisar.setEnabled(true);
+    }
+    
+    public void desabilitar(){;
+        jTxtMmsNome.setEnabled(false);
+        jTxtMmsApelido.setEnabled(false);
+        jFmtMmsDataNasc.setEnabled(false);
+        jCboMmsNivel.setEnabled(false);
+        jBtnMmsCancelar.setEnabled(true);
+        jBtnMmsConfirmar.setEnabled(true);
+        jBtnMmsIncluir.setEnabled(true);
+        jBtnMmsAlterar.setEnabled(true);
+        jBtnMmsExcluir.setEnabled(true);
+        jBtnMmsPesquisar.setEnabled(true);
+    }
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -48,6 +97,7 @@ public class JDlgMmsUsuarios extends javax.swing.JDialog {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jTxtMmsNome = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jTxtMmsId = new javax.swing.JTextField();
@@ -114,6 +164,96 @@ public class JDlgMmsUsuarios extends javax.swing.JDialog {
         jBtnMmsPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/imagens/pesquisar.png"))); // NOI18N
         jBtnMmsPesquisar.setText("Pesquisar");
 
+=======
+        jLabel2 = new javax.swing.JLabel();
+        jTxtMmsNome = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jTxtMmsApelido = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jFmtMmsDataNasc = new javax.swing.JFormattedTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jPwfMmsSenha = new javax.swing.JPasswordField();
+        jCboMmsNivel = new javax.swing.JComboBox<>();
+        jBtnMmsIncluir = new javax.swing.JButton();
+        jBtnMmsExcluir = new javax.swing.JButton();
+        jBtnMmsAlterar = new javax.swing.JButton();
+        jBtnMmsCancelar = new javax.swing.JButton();
+        jBtnMmsConfirmar = new javax.swing.JButton();
+        jBtnMmsPesquisar = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jChbMmsUsuarios = new javax.swing.JCheckBox();
+        jFmtMmsCpf = new javax.swing.JFormattedTextField();
+        jFmtMmsId = new javax.swing.JFormattedTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        jLabel1.setText("ID");
+
+        jLabel2.setText("Nome");
+
+        jLabel3.setText("Apelido");
+
+        jLabel4.setText("CPF");
+
+        jLabel5.setText("Data de Nascimento");
+
+        jFmtMmsDataNasc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jFmtMmsDataNascActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setText("Senha");
+
+        jLabel7.setText("Nivel");
+
+        jPwfMmsSenha.setText("jPasswordField1");
+
+        jCboMmsNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jBtnMmsIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
+        jBtnMmsIncluir.setText("Incluir");
+        jBtnMmsIncluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnMmsIncluirActionPerformed(evt);
+            }
+        });
+
+        jBtnMmsExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jBtnMmsExcluir.setText("Excluir");
+        jBtnMmsExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnMmsExcluirActionPerformed(evt);
+            }
+        });
+
+        jBtnMmsAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/8943966.png"))); // NOI18N
+        jBtnMmsAlterar.setText("Alterar");
+
+        jBtnMmsCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
+        jBtnMmsCancelar.setText("Cancelar");
+        jBtnMmsCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnMmsCancelarActionPerformed(evt);
+            }
+        });
+
+        jBtnMmsConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        jBtnMmsConfirmar.setText("Confirmar");
+        jBtnMmsConfirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnMmsConfirmarActionPerformed(evt);
+            }
+        });
+
+        jBtnMmsPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jBtnMmsPesquisar.setText("Pesquisar");
+
+        jChbMmsUsuarios.setText("ativo");
+
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -122,6 +262,7 @@ public class JDlgMmsUsuarios extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jTxtMmsNome)
@@ -172,10 +313,68 @@ public class JDlgMmsUsuarios extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jBtnMmsPesquisar)
                 .addGap(0, 0, Short.MAX_VALUE))
+=======
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jFmtMmsId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTxtMmsNome, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(325, 325, 325)
+                                        .addComponent(jLabel8)
+                                        .addGap(88, 88, 88))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(66, 66, 66)
+                                .addComponent(jLabel2))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(jFmtMmsCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jFmtMmsDataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel5))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jPwfMmsSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jTxtMmsApelido, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jCboMmsNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(34, 34, 34)
+                                        .addComponent(jChbMmsUsuarios))
+                                    .addComponent(jLabel7))
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jBtnMmsIncluir)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jBtnMmsExcluir)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jBtnMmsAlterar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jBtnMmsCancelar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBtnMmsConfirmar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jBtnMmsPesquisar)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2)
@@ -212,11 +411,48 @@ public class JDlgMmsUsuarios extends javax.swing.JDialog {
                     .addComponent(jBtnMmsCancelar)
                     .addComponent(jBtnMmsPesquisar))
                 .addGap(0, 4, Short.MAX_VALUE))
+=======
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTxtMmsNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMmsApelido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtMmsId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel4)
+                        .addComponent(jLabel8)
+                        .addComponent(jLabel5)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jFmtMmsDataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jCboMmsNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jChbMmsUsuarios)
+                    .addComponent(jFmtMmsCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPwfMmsSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBtnMmsIncluir)
+                    .addComponent(jBtnMmsExcluir)
+                    .addComponent(jBtnMmsAlterar)
+                    .addComponent(jBtnMmsCancelar)
+                    .addComponent(jBtnMmsConfirmar)
+                    .addComponent(jBtnMmsPesquisar))
+                .addContainerGap(71, Short.MAX_VALUE))
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
     private void jBtnMmsIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMmsIncluirActionPerformed
         // TODO add your handling code here:
         jTxtMmsId.setEnabled(true);
@@ -300,6 +536,32 @@ jBtnMmsExcluir.setEnabled(true);
 jBtnMmsIncluir.setEnabled(true);
 jBtnMmsPesquisar.setEnabled(true);
     }//GEN-LAST:event_jBtnMmsAlterarActionPerformed
+=======
+    private void jFmtMmsDataNascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtMmsDataNascActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jFmtMmsDataNascActionPerformed
+
+    private void jBtnMmsIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMmsIncluirActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnMmsIncluirActionPerformed
+
+    private void jBtnMmsExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMmsExcluirActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnMmsExcluirActionPerformed
+
+    private void jBtnMmsCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMmsCancelarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnMmsCancelarActionPerformed
+
+    private void jBtnMmsConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMmsConfirmarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnMmsConfirmarActionPerformed
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
 
     /**
      * @param args the command line arguments
@@ -317,14 +579,28 @@ jBtnMmsPesquisar.setEnabled(true);
                     break;
                 }
             }
+<<<<<<< HEAD
         } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
+=======
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(JDlgMmsUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(JDlgMmsUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(JDlgMmsUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(JDlgMmsUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
+<<<<<<< HEAD
             @Override
+=======
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
             public void run() {
                 JDlgMmsUsuarios dialog = new JDlgMmsUsuarios(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
@@ -345,8 +621,16 @@ jBtnMmsPesquisar.setEnabled(true);
     private javax.swing.JButton jBtnMmsExcluir;
     private javax.swing.JButton jBtnMmsIncluir;
     private javax.swing.JButton jBtnMmsPesquisar;
+<<<<<<< HEAD
     private javax.swing.JComboBox<String> jCboMmsCargo;
     private javax.swing.JComboBox<String> jCboMmsGenero;
+=======
+    private javax.swing.JComboBox<String> jCboMmsNivel;
+    private javax.swing.JCheckBox jChbMmsUsuarios;
+    private javax.swing.JFormattedTextField jFmtMmsCpf;
+    private javax.swing.JFormattedTextField jFmtMmsDataNasc;
+    private javax.swing.JFormattedTextField jFmtMmsId;
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -356,9 +640,13 @@ jBtnMmsPesquisar.setEnabled(true);
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPasswordField jPwfMmsSenha;
+<<<<<<< HEAD
     private javax.swing.JTextField jTxtMmsDataCadastro;
     private javax.swing.JTextField jTxtMmsDataNasc;
     private javax.swing.JTextField jTxtMmsId;
+=======
+    private javax.swing.JTextField jTxtMmsApelido;
+>>>>>>> 039cc4b950b02e06d290f3f4c847d8844164d1f0
     private javax.swing.JTextField jTxtMmsNome;
     // End of variables declaration//GEN-END:variables
 }
