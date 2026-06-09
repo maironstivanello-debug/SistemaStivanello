@@ -13,7 +13,7 @@ public class JDlgMmsLogin extends javax.swing.JDialog {
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(JDlgMmsLogin.class.getName());
 
     /**
-     * Creates new form JDlgMssLogin
+     * Creates new form JDlgMmsLogin
      */
     public JDlgMmsLogin(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -29,96 +29,21 @@ public class JDlgMmsLogin extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jPwfMmsSenha = new javax.swing.JPasswordField();
-        jTxtMmsUsuarios = new javax.swing.JTextField();
-        jBtnMmsEntrar = new javax.swing.JButton();
-        jBtnMmsSair = new javax.swing.JButton();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-
-        jLabel1.setText("Usuário");
-
-        jLabel2.setText("Senha");
-
-        jPwfMmsSenha.setText("jPasswordField2");
-
-        jBtnMmsEntrar.setText("Entrar ");
-        jBtnMmsEntrar.addActionListener(this::jBtnMmsEntrarActionPerformed);
-
-        jBtnMmsSair.setText("Sair");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPwfMmsSenha)
-                    .addComponent(jTxtMmsUsuarios)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBtnMmsEntrar)
-                                .addGap(18, 18, 18)
-                                .addComponent(jBtnMmsSair)))
-                        .addGap(0, 226, Short.MAX_VALUE)))
-                .addContainerGap())
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTxtMmsUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPwfMmsSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnMmsEntrar)
-                    .addComponent(jBtnMmsSair))
-                .addContainerGap(141, Short.MAX_VALUE))
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jBtnMmsEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMmsEntrarActionPerformed
-        // TODO add your handling code here:
-            String usuario = jTxtMmsUsuarios.getText();
-    String senha = new String(jPwfMmsSenha.getPassword());
-
-    if(usuario.equals("Stivanello") && senha.equals("Mairon2020")){
-        
-        // abre a tela principal
-        JFrmMmsPrincipal tela = new JFrmMmsPrincipal();
-        tela.setVisible(true);
-        
-        // fecha a tela de login
-        dispose();
-        
-    } else {
-        
-        javax.swing.JOptionPane.showMessageDialog(
-            null,
-            "Usuário ou senha inválidos!"
-        );
-        
-        // limpa os campos
-        jTxtMmsUsuarios.setText("");
-        jPwfMmsSenha.setText("");
-        
-        // volta foco pro usuário
-        jTxtMmsUsuarios.requestFocus();
-    }
-    }//GEN-LAST:event_jBtnMmsEntrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -158,11 +83,5 @@ public class JDlgMmsLogin extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBtnMmsEntrar;
-    private javax.swing.JButton jBtnMmsSair;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPasswordField jPwfMmsSenha;
-    private javax.swing.JTextField jTxtMmsUsuarios;
     // End of variables declaration//GEN-END:variables
 }
